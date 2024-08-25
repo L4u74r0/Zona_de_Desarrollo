@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+}
+
+.logotipo{
+    width: auto;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.logotipo img{
+    height: 100%;
+    width: auto;
+}
+
+.navegacion{
+    display: flex;
+    width: 400px;
+    height: 100%;
+    padding: 0px 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navegacion ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    gap: 40px;
+}
+
+.navegacion ul li a{
+    font-family: "Kanit Medium";
+    text-decoration: none;
+    color: black;
+    font-size: 120%;
+}
+
+.redes{
+    display: flex;
+    padding: 0px 12px;
+    height: 100%;
+    width: 200px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes button{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 60%;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border-style: none;
+}
+
+.redes button svg{
+    display: flex;
+    height: 100%;
+}
+
+.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/homeSection.png');
+    background-size: cover;
+    background-position: center; 
+    flex-direction: column;
+    height: 100vh; 
+}
+
+.nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/aboutusSection.png');
+    background-size: cover; 
+    background-position: center; 
+    flex-direction: column;
+    height: 100vh;
+}
+
+.cursos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/cursosSection.png');
+    background-size: cover; 
+    background-position: center; 
+    flex-direction: column;
+    height: 100vh; 
+}
+
+.contactos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/contactSection.png');
+    background-size: cover; 
+    background-position: center; 
+    flex-direction: column;
+    height: 100vh; 
+}
+
+.inicio{
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0;
+    padding: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.containerInfo{
+    background-color: transparent;
+    display: flex;
+    height: 80%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containerInfo p{
+    font-family: "Kanit Medium";
+    color: black;
+    font-size: 25px;
+    margin: 8px;
+}
+
+.containerLogo{
+    background-color: transparent;
+    display: flex;
+    height: 80%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerLogo img{
+    display: flex;
+    height: 80%;
+    width: auto;
+}
