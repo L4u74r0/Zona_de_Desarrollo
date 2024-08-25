@@ -184,3 +184,60 @@ header{
     height: 60%;
     width: auto;
 }
+
+@media (max-width: 768px) {
+    header {
+        height: 60px; /* Ajusta la altura del header */
+        flex-direction: column; /* Cambia la dirección a columna */
+    }
+
+    .logotipo {
+        height: 60%; /* Reduce el tamaño del logotipo */
+    }
+
+    .navegacion {
+        width: 100%; /* Navegación a pantalla completa */
+        padding: 0;
+        justify-content: space-around; /* Ajusta la distribución de los elementos */
+    }
+
+    .navegacion ul {
+        flex-direction: column; /* Cambia los elementos del menú a columna */
+        gap: 10px; /* Reduce el espacio entre elementos */
+    }
+
+    .navegacion ul li a {
+        font-size: 100%; /* Ajusta el tamaño de la fuente para móviles */
+    }
+
+    .redes {
+        width: 100%; /* Ajusta el ancho de la sección de redes sociales */
+        justify-content: center; /* Centra los botones */
+    }
+
+    .redes button {
+        width: 40px; /* Ajusta el tamaño de los botones de redes sociales */
+        height: 40px;
+    }
+
+    .inicio, .nosotros, .cursos, .contactos {
+        height: auto; /* Permite que las secciones se adapten al contenido */
+        padding: 20px; /* Añade padding para espacio interno */
+    }
+
+    .containerInfo, .containerLogo {
+        width: 100%; /* Ocupan el ancho completo en pantallas pequeñas */
+        height: auto; /* Ajustan la altura automáticamente */
+        margin-bottom: 20px; /* Añade margen inferior entre los elementos */
+    }
+
+    .containerInfo p {
+        font-size: 18px; /* Ajusta el tamaño de fuente */
+    }
+
+    .containerInfo button {
+        width: 100%; /* Botón ocupa todo el ancho disponible */
+        margin-top: 20px; /* Espacio adicional superior */
+    }
+
+}
