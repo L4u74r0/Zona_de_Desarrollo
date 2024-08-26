@@ -96,13 +96,12 @@ header {
     background-position: center;
     flex-direction: column;
     height: 100vh;
-}
-
-
-
-.contactos {
     background-image: url('img/contactSection.png');
 }
+
+
+
+
 
 /* Datos Styles */
 .datos {
@@ -111,8 +110,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    text-align: center;
+    align-items: left;
+    text-align: left;
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
@@ -124,19 +123,20 @@ header {
 /* Heading Styles */
 .datos h1 {
     margin: 0;
-    padding: 20px;
-    text-align: center;
+    padding: 5px;
+    text-align: left;
     font-size: 2rem;
     display: block;
     position: relative;
     top: 100%;
+margin-top: 5%;
 }
 
 /* Paragraph Styles */
 .datos p {
     margin: 0;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     display: block;
     top: 100%;
 }
