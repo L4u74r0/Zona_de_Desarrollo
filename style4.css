@@ -1,12 +1,14 @@
-body{
+/* General Styles */
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
-    top: 0px;
-    background-color: rgb(255, 255, 255);
+/* Header Styles */
+header {
+    top: 0;
+    background-color: #fff;
     height: 80px;
     width: 100%;
     display: flex;
@@ -14,30 +16,33 @@ header{
     justify-content: space-evenly;
     align-items: center;
     position: fixed;
+    z-index: 1000; 
 }
 
-.logotipo{
-    width: auto;
+/* Logotipo Styles */
+.logotipo {
     height: 80%;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.logotipo img{
+.logotipo img {
     height: 100%;
     width: auto;
 }
 
-.navegacion{
+/* Navegacion Styles */
+.navegacion {
     display: flex;
     width: 400px;
     height: 100%;
-    padding: 0px 12px;
+    padding: 0 12px;
     align-items: center;
     justify-content: center;
 }
 
-.navegacion ul{
+.navegacion ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -48,23 +53,24 @@ header{
     gap: 40px;
 }
 
-.navegacion ul li a{
-    font-family: "Kanit Medium";
+.navegacion ul li a {
+    font-family: "Kanit Medium", sans-serif;
     text-decoration: none;
     color: black;
-    font-size: 120%;
+    font-size: 1.2rem; 
 }
 
-.redes{
+
+.redes {
     display: flex;
-    padding: 0px 12px;
+    padding: 0 12px;
     height: 100%;
     width: 200px;
     justify-content: space-between;
     align-items: center;
 }
 
-.redes button{
+.redes button {
     display: flex;
     padding: 0;
     margin: 0;
@@ -73,115 +79,70 @@ header{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    border-style: none;
+    border: none; 
     overflow: hidden;
 }
 
-.redes button svg{
-    display: flex;
-    height: 110%;
+.redes button svg {
+    height: 100%; 
 }
 
-.inicio{
+
+.contactos {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('img/homeSection.png');
     background-size: cover;
-    background-position: center; 
-    flex-direction: column;
-    height: 100vh; 
-}
-
-.nosotros{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('img/aboutusSection.png');
-    background-size: cover; 
-    background-position: center; 
+    background-position: center;
     flex-direction: column;
     height: 100vh;
 }
 
-.cursos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('img/cursosSection.png');
-    background-size: cover; 
-    background-position: center; 
-    flex-direction: column;
-    height: 100vh; 
-}
 
-.contactos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.contactos {
     background-image: url('img/contactSection.png');
-    background-size: cover; 
-    background-position: center; 
-    flex-direction: column;
-    height: 100vh; 
 }
 
-.inicio{
-    flex-wrap: wrap;
+/* Datos Styles */
+.datos {
+    position: absolute;
+    top: 0;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
     margin: 0;
-    padding: 30px;
-    justify-content: space-evenly;
-    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+    transform: translateX(90%);
+    top: 10%
 }
 
-.containerInfo{
-    background-color: transparent;
-    display: flex;
-    height: 80%;
-    width: 50%;
-    flex-direction: column;
-    justify-content: center;
+/* Heading Styles */
+.datos h1 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    display: block;
+    position: relative;
+    top: 100%;
 }
 
-.containerInfo p{
-    font-family: "Kanit Medium";
-    color: black;
-    font-size: 22px;
-    margin: 7px;
+/* Paragraph Styles */
+.datos p {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    top: 100%;
 }
 
-.containerLogo{
-    background-color: transparent;
-    display: flex;
-    height: 80%;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
+/* iframe Styles */
+.datos iframe {
+    width: 500px;
+    height: 300px;
 }
-
-.containerLogo img{
-    display: flex;
-    height: 80%;
-    width: auto;
-}
-
-.containerInfo button{
-    margin-top: 10px;
-    width: 200px;
-    background-color: rgb(60, 255, 0);
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-style: none;
-    border-radius: 25px;
-    padding: 0px 12px;
-}
-
-.containerInfo button svg{
-    display: flex;
-    height: 60%;
-    width: auto;
-}
-
