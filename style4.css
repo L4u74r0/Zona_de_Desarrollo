@@ -116,33 +116,296 @@ header {
     padding: 20px;
     box-sizing: border-box;
     z-index: 1;
-    transform: translateX(90%);
-    top: 10%
+    left: 10%;
 }
 
-/* Heading Styles */
-.datos h1 {
-    margin: 0;
-    padding: 5px;
-    text-align: left;
-    font-size: 2rem;
-    display: block;
-    position: relative;
-    top: 100%;
-margin-top: 5%;
-}
 
-/* Paragraph Styles */
-.datos p {
-    margin: 0;
-    padding: 10px;
-    text-align: left;
-    display: block;
-    top: 100%;
-}
 
 /* iframe Styles */
 .datos iframe {
     width: 500px;
     height: 300px;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 599px) {
+    header {
+        height: 60px;
+    }
+
+    .logotipo {
+        height: 60%;
+    }
+
+    .navegacion {
+        width: 100%;
+        padding: 0 8px;
+    }
+
+    .navegacion ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navegacion ul li a {
+        font-size: 1rem;
+    }
+
+    .redes {
+        width: 150px;
+    }
+
+    .contactos {
+        height: auto; /* Ajusta la altura si el contenido es más largo en móviles */
+        padding: 20px;
+    }
+
+    .datos {
+        position: static; /* Cambia la posición para móviles si es necesario */
+        transform: none; /* Elimina la transformación si es necesario */
+        top: auto; /* Ajusta el top */
+        padding: 10px;
+    }
+
+    .datos h1 {
+        font-size: 1.5rem; /* Ajusta el tamaño del texto */
+        margin-top: 2%;
+    }
+
+    .datos p {
+        font-size: 0.9rem; /* Ajusta el tamaño del texto */
+    }
+
+    .datos iframe {
+        width: 100%; /* Ajusta el tamaño del iframe */
+        height: auto; /* Ajusta la altura del iframe */
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 599px) {
+    header {
+        height: 200px;
+    }
+
+    .logotipo {
+        height: 60%;
+    }
+
+    .navegacion {
+        width: 100%;
+        padding: 0 8px;
+    }
+
+    .navegacion ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navegacion ul li a {
+        font-size: 1rem;
+    }
+
+    .redes {
+        width: 150px;
+    }
+
+    .contactos {
+        height: auto; /* Ajusta la altura si el contenido es más largo en móviles */
+        padding: 20px;
+    }
+
+    .datos {
+        position: static; /* Cambia la posición para móviles si es necesario */
+        transform: none; /* Elimina la transformación si es necesario */
+        top: auto; /* Ajusta el top */
+        padding: 10px;
+        margin-top: 30%;
+    }
+
+    .datos h1 {
+        font-size: 1.5rem; /* Ajusta el tamaño del texto */
+        margin-top: 2%;
+    }
+
+    .datos p {
+        font-size: 0.9rem; /* Ajusta el tamaño del texto */
+    }
+
+    .datos iframe {
+        width: 100%; /* Ajusta el tamaño del iframe */
+        height: auto; /* Ajusta la altura del iframe */
+    }
+}
+
+
+
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Tablet Styles */
+@media (min-width: 600px) and (max-width: 899px) {
+    header {
+        height: 70px;
+    }
+
+    .logotipo {
+        height: 70%;
+    }
+
+    .navegacion {
+        width: 300px;
+    }
+
+    .navegacion ul {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .navegacion ul li a {
+        font-size: 1.1rem;
+    }
+
+    .redes {
+        width: 180px;
+    }
+
+    .contactos {
+        padding: 30px;
+    }
+
+    .datos {
+        position: relative; /* Ajusta la posición para tablets */
+        transform: none; /* Elimina la transformación si es necesario */
+        top: 0; /* Ajusta el top */
+        padding: 15px;
+    }
+
+    .datos h1 {
+        font-size: 1.75rem; /* Ajusta el tamaño del texto */
+        margin-top: 3%;
+    }
+
+    .datos p {
+        font-size: 1rem; /* Ajusta el tamaño del texto */
+    }
+
+    .datos iframe {
+        width: 90%; /* Ajusta el tamaño del iframe */
+        height: auto; /* Ajusta la altura del iframe */
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 900px) {
+    header {
+        height: 80px;
+    }
+
+    .logotipo {
+        height: 80%;
+    }
+
+    .navegacion {
+        width: 400px;
+    }
+
+    .navegacion ul {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .navegacion ul li a {
+        font-size: 1.2rem;
+    }
+
+    .redes {
+        width: 200px;
+    }
+
+    .contactos {
+        height: 100vh;
+        padding: 40px;
+    }
+
+    .datos {
+        position: absolute;
+        top: 10%;
+        transform: translateX(90%);
+        padding: 20px;
+    }
+
+    .datos h1 {
+        font-size: 2rem;
+        margin-top: 5%;
+    }
+
+    .datos p {
+        font-size: 1rem;
+    }
+
+    .datos iframe {
+        width: 500px;
+        height: 300px;
+    }
 }
