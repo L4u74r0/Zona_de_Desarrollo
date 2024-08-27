@@ -107,13 +107,33 @@ header{
 
 .nosotros{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-image: url('img/aboutusSection.png');
     background-size: cover; 
     background-position: center; 
-    flex-direction: column;
     height: 100vh;
+}
+
+/* Aca la idea es que haya un carrusel con imagenes de las actividades del lugar */
+.image{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    background-color: transparent;
+    padding: 20px;
+}
+
+.textoContainer{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    background-color: transparent;
+    display: inline;
+    padding: 20px;
+    font-family: "Kanit Medium";
+    color: black;
+    font-size: 20px;
 }
 
 .cursos{
