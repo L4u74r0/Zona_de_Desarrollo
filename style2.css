@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+}
+
+.logotipo{
+    width: auto;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.logotipo img{
+    height: 100%;
+    width: auto;
+}
+
+.navegacion{
+    display: flex;
+    width: 400px;
+    height: 100%;
+    padding: 0px 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navegacion ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    gap: 40px;
+}
+
+.navegacion ul li a{
+    font-family: "Kanit Medium";
+    text-decoration: none;
+    color: black;
+    font-size: 120%;
+}
+
+.redes{
+    display: flex;
+    padding: 0px 12px;
+    height: 100%;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes button{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 60%;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border-style: none;
+    overflow: hidden;
+    
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.redes button:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.redes button svg{
+    display: flex;
+    height: 110%;
+}
+
+
+
+.nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/aboutusSection.png');
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    height: 100vh; /* Asegura que el contenedor cubra toda la altura del viewport */
+    margin: 0; /* Elimina márgenes que puedan afectar la altura */
+    padding: 0; /* Elimina relleno que pueda afectar la altura */
+}
+
+
+
+
+
+.containerInfo{
+    background-color: transparent;
+    display: flex;
+    height: 80%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containerInfo p{
+    font-family: "Kanit Medium";
+    color: black;
+    font-size: 22px;
+    margin: 7px;
+}
+
+.containerLogo{
+    background-color: transparent;
+    display: flex;
+    height: 80%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerLogo img{
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+.containerInfo button{
+    margin-top: 10px;
+    width: 200px;
+    background-color: rgb(60, 255, 0);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-style: none;
+    border-radius: 25px;
+    padding: 0px 12px;
+
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.containerInfo button:hover {
+    background-color: rgb(0, 230, 57); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.containerInfo button svg{
+    display: flex;
+    height: 60%;
+    width: auto;
+}
+
+.image img {
+    display: flex;
+    width: 100%; 
+    height: 300px; 
+    margin-top: 100%;
+  }
+  
+  .image p{
+    width: 400px;
+  }
+
+
+
+
+
+@media (max-width: 768px) {
+    header {
+        height: 150px; 
+        flex-direction: column; 
+    }
+
+    .logotipo {
+        height: 10%; 
+    }
+
+    .navegacion {
+        width: 100%; 
+
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .navegacion ul {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .navegacion ul li a {
+        font-size: 100%; 
+    }
+
+    .redes {
+        width: 100%; 
+        justify-content: center; 
+    }
+
+    .redes button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .inicio, .nosotros, .cursos, .contactos {
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .containerInfo, .containerLogo {
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 20px; 
+    }
+
+    .containerInfo p {
+        font-size: 18px; 
+    }
+
+    .containerInfo button {
+        width: 30%; 
+        margin-top: 20px; 
+    }
+
+}
