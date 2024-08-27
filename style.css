@@ -91,6 +91,9 @@ header{
     height: 110%;
 }
 
+
+/* ---------------------- INICIO ----------------------------- */
+
 .inicio{
     display: flex;
     justify-content: center;
@@ -202,8 +205,7 @@ header{
     width: auto;
 }
 
-
-
+/* -----------------------RESPONSIVE INICIO-------------------------- */
 
 @media (max-width: 768px) {
     header {
@@ -261,4 +263,105 @@ header{
         margin-top: 20px; 
     }
 
+}
+
+/* -------------------------NOSOTROS------------------------------- */
+.nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/aboutusSection.png');
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    height: 100vh; /* Asegura que el contenedor cubra toda la altura del viewport */
+    margin: 0; /* Elimina márgenes que puedan afectar la altura */
+    padding: 0; /* Elimina relleno que pueda afectar la altura */
+}
+
+/* --------------------RESPONSIVE NOSOTROS------------------------------------ */
+
+
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.datos {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    text-align: left;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+    left: 10%;
+}
+
+
+/* iframe Styles */
+.datos iframe {
+    width: 500px;
+    height: 300px;
 }
